@@ -8,7 +8,7 @@ const CardFeature = ({image,name,price,category,id}) => {
    
     const  dispatch = useDispatch()
     const handleCardProduct = (e)=>{
-            // e.stopPropagation()
+             
             dispatch(addCartItem( {
               _id: id,
               name: name,

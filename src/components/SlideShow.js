@@ -3,7 +3,7 @@ import offer50 from "../assets/offer50.jpg";
 import salesposter from "../assets/salesposter.webp";
 import CLBanner from "../assets/CLBanner.jpg";
 
-import fashionoffer from "../assets/fashionoffer.webp";
+ 
 
 function Slideshow( ) {
   const [activeIndex, setActiveIndex] = useState(0);

@@ -10,7 +10,7 @@ import {toast }from 'react-hot-toast'
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const userData = useSelector(state=>state.user)
-  console.log(userData)
+   
  const dispatch = useDispatch()
 
   const handleShow = () =>{
@@ -37,8 +37,8 @@ const Header = () => {
           <nav className="flex flex-wrap gap-1  text-s md:text-xl hidden md:flex md:gap-4">
             <Link className="h-full bg-gray-500 text-white font-md p-1 px-2  rounded-lg" to={""}>Home</Link>
             <Link className="h-full bg-blue-900 text-white font-md p-1 px-2  rounded-lg" to={"menu/642be796e89df05eb00cccaf"}>Menu</Link>
-            <Link className="h-full bg-slate-800 text-white font-md p-1 px-2  rounded-lg" to={"about"}>About</Link>
-            <Link className="h-full bg-green-900 text-white font-md p-1 px-2  rounded-lg" to={"contact"}>Contact</Link>
+            {/* <Link className="h-full bg-slate-800 text-white font-md p-1 px-2  rounded-lg" to={"about"}>About</Link>
+            <Link className="h-full bg-green-900 text-white font-md p-1 px-2  rounded-lg" to={"contact"}>Contact</Link> */}
           </nav>
           <div className="text-2xl text-slate-700 relative">
             <Link to={"cart"}>
@@ -51,7 +51,7 @@ const Header = () => {
           <div className="text-slate-600" onClick={handleShow}>
             <div className="text-3xl cursor-pointer w-10 h-10 rounded-full overflow-hidden shadow drop-shadow-md" >
              {
-             userData.image ? <img src={userData.image} className="w-full h-full"/> :<HiOutlineUserCircle className="w-full h-full"/>
+             userData.image ? <img src={userData.image} alt="img" className="w-full h-full"/> :<HiOutlineUserCircle className="w-full h-full"/>
              }
             </div>
           
@@ -65,8 +65,8 @@ const Header = () => {
               <nav className="flex flex-col md:hidden  text-s md:text-xl   md:flex md:gap-4">
               <Link className="bg-gray-500 text-white font-md text-center" to={""}>Home</Link>
               <Link className="bg-blue-900 text-white text-center" to={"menu/642be796e89df05eb00cccaf5"}>Menu</Link>
-              <Link className="bg-slate-900 text-white text-center" to={"about"}>About</Link>
-              <Link className="bg-green-900 text-white text-center" to={"contact"}>Contact</Link>
+              {/* <Link className="bg-slate-900 text-white text-center" to={"about"}>About</Link>
+              <Link className="bg-green-900 text-white text-center" to={"contact"}>Contact</Link> */}
           </nav>
             </div>
           )}
