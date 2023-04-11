@@ -154,7 +154,7 @@ const NewProduct = () => {
    ):(
    <div className=" flex items-center m-auto p-auto  justify-center font-serif bg-red-500 w-fit flex-col">
     <h1 className="flex  items-center text-white text-xl justify-center w-full h-full m-2">Only admin can add products </h1>
-    <small className="text-xs text-white cursor-pointer" title="id: lokesh1@gmail.com , password:1234">admin details</small>
+    <small className="text-xs text-white cursor-pointer" title="id: lokesh1@gmail.com , password:1234">to add admin details are here</small>
     </div>
    )
         }
